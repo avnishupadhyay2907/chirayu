@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-Apr-2025, 7:11:44 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="ReportDTO" table="REPORT">
+		<id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="patientId" type="long">
+			<column name="PATIENTID" />
+		</property>
+		<property name="patientName" type="java.lang.String">
+			<column name="PATIENTNAME" />
+		</property>
+		<property name="reportDate" type="java.lang.String">
+			<column name="REPORTDATE" />
+		</property>
+		<property name="description" type="java.lang.String">
+			<column name="DESCRIPTION" />
+		</property>
+	</class>
+</hibernate-mapping>

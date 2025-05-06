@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-Apr-2025, 5:58:11 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.hms.dto">
+	<class name="PatientDTO" table="PATIENT">
+		<id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<property name="diseaseName" type="java.lang.String">
+			<column name="DISEASENAME" />
+		</property>
+		<property name="wardName" type="java.lang.String">
+			<column name="WARDNAME" />
+		</property>
+		<property name="doctorName" type="java.lang.String">
+			<column name="DOCTORNAME" />
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="ADDRESS" />
+		</property>
+		<property name="gender" type="java.lang.String">
+			<column name="GENDER" />
+		</property>
+		<property name="phone" type="java.lang.String">
+			<column name="PHONE" />
+		</property>
+		<property name="doctorId" type="long">
+			<column name="DOCTORID" />
+		</property>
+		<property name="wardId" type="long">
+			<column name="WARDID" />
+		</property>
+		<property name="age" type="java.util.Date">
+			<column name="AGE" />
+		</property>
+		<property name="diseaseId" type="long">
+			<column name="DISEASEID" />
+		</property>
+	</class>
+</hibernate-mapping>
