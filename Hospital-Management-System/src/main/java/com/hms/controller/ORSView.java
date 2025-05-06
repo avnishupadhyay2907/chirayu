@@ -34,7 +34,10 @@ public interface ORSView {
 	public String SPECIALIST_LIST_VIEW = PAGE_FOLDER + "/SpecialistListView.jsp";
 	public String DOCTOR_SCHEDULE_VIEW = PAGE_FOLDER + "/DoctorScheduleView.jsp";
 	public String DOCTOR_SCHEDULE_LIST_VIEW = PAGE_FOLDER + "/DoctorScheduleListView.jsp";
-
+	public String PATIENT_VIEW = PAGE_FOLDER + "/PatientView.jsp";
+	public String PATIENT_LIST_VIEW = PAGE_FOLDER + "/PatientListView.jsp";
+	
+	
 	public String ERROR_CTL = APP_CONTEXT + "/ErrorCtl";
 	public String CHANGE_PASSWORD_CTL = APP_CONTEXT + "/ctl/ChangePasswordCtl";
 	public String FORGET_PASSWORD_CTL = APP_CONTEXT + "/ForgetPasswordCtl";

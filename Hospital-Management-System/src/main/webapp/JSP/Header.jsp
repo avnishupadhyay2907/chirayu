@@ -77,7 +77,7 @@
 
 <nav class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="<%=ORSView.WELCOME_CTL%>">
-        <img src="<%=ORSView.APP_CONTEXT%>/img/custom.png" width="160px" height="45px">
+        <img src="<%=ORSView.APP_CONTEXT%>/image/he.png" width="80px" height="45px">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <i class="fa fa-bars text-white" style="font-size: 24px;"></i>

@@ -38,7 +38,9 @@ public class PatientModelHibImp implements PatientModelInt {
 		} finally {
 			session.close();
 		}
+		System.out.println("in add method patient ====================>");
 		return dto.getId();
+	
 	}
 
 	public void delete(PatientDTO dto) throws ApplicationException {
@@ -173,9 +175,12 @@ public class PatientModelHibImp implements PatientModelInt {
 			Criteria criteria = session.createCriteria(PatientDTO.class);
 			if (dto != null) {
 
-				if (dto.getId() != 0 && dto.getId() > 0) {
-					criteria.add(Restrictions.eq("id", dto.getId()));
-				}
+				
+				/*
+				 * if (dto.getId() != 0 && dto.getId() > 0) { criteria.add(Restrictions.eq("id",
+				 * dto.getId())); }
+				 */
+				 
 				if (dto.getName() != null && dto.getName().length() > 0) {
 					criteria.add(Restrictions.like("name", dto.getName() + "%"));
 				}

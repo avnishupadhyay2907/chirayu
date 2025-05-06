@@ -19,12 +19,12 @@
 		<mapping resource="com/hms/dto/RoleDTO.hbm.xml" />
 		<mapping resource="com/hms/hbm/UserDTO.hbm.xml" />
 		<mapping resource="com/hms/hbm/DiseaseDTO.hbm.xml" />
-
+		<mapping resource="com/hms/dto/DoctorScheduleDTO.hbm.xml" />
 		<mapping resource="com/hms/dto/WardDTO.hbm.xml" />
 		<mapping resource="com/hms/dto/SpecialistDTO.hbm.xml" />
 		<mapping resource="com/hms/dto/ReportDTO.hbm.xml" />
 		<mapping resource="com/hms/dto/PatientDTO.hbm.xml" />
-		<mapping resource="com/hms/dto/DoctorScheduleDTO.hbm.xml" />
+
 
 	</session-factory>
 </hibernate-configuration>

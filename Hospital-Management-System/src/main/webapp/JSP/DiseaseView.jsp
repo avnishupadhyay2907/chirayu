@@ -24,7 +24,7 @@ i.css {
 }
 
 .p4 {
-	background-image: url('<%=ORSView.APP_CONTEXT%>/image/disease.jpg');
+	background-image: url('<%=ORSView.APP_CONTEXT%>/image/d.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
 	background-size: cover;

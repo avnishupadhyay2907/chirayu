@@ -56,7 +56,7 @@ public class PatientListCtl extends BaseCtl {
 		System.out.println("Patient List =====>" + "populate dto method started");
 
 		PatientDTO dto = new PatientDTO();
-
+		dto.setId(DataUtility.getLong(request.getParameter("id")));
 		dto.setName(DataUtility.getString(request.getParameter("name")));
 		dto.setAge(DataUtility.getDate(request.getParameter("age")));
 		dto.setGender(DataUtility.getString(request.getParameter("gender")));
@@ -66,6 +66,7 @@ public class PatientListCtl extends BaseCtl {
 		dto.setDoctorId(DataUtility.getLong(request.getParameter("doctorId")));
 		dto.setDiseaseId(DataUtility.getLong(request.getParameter("diseaseId")));
 
+		System.out.println("syso===>" + request.getParameter("id"));
 		System.out.println("syso===>" + request.getParameter("name"));
 		System.out.println("syso===>" + request.getParameter("age"));
 		System.out.println("syso===>" + request.getParameter("gender"));

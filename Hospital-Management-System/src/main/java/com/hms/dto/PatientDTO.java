@@ -9,11 +9,8 @@ public class PatientDTO extends BaseDTO {
 	private String phone;
 	private String address;
 	private long wardId;
-	private String wardName;
 	private long doctorId;
-	private String doctorName;
 	private long diseaseId;
-	private String diseaseName;
 
 	public String getName() {
 		return name;
@@ -63,14 +60,6 @@ public class PatientDTO extends BaseDTO {
 		this.wardId = wardId;
 	}
 
-	public String getWardName() {
-		return wardName;
-	}
-
-	public void setWardName(String wardName) {
-		this.wardName = wardName;
-	}
-
 	public long getDoctorId() {
 		return doctorId;
 	}
@@ -79,28 +68,12 @@ public class PatientDTO extends BaseDTO {
 		this.doctorId = doctorId;
 	}
 
-	public String getDoctorName() {
-		return doctorName;
-	}
-
-	public void setDoctorName(String doctorName) {
-		this.doctorName = doctorName;
-	}
-
 	public long getDiseaseId() {
 		return diseaseId;
 	}
 
 	public void setDiseaseId(long diseaseId) {
 		this.diseaseId = diseaseId;
-	}
-
-	public String getDiseaseName() {
-		return diseaseName;
-	}
-
-	public void setDiseaseName(String diseaseName) {
-		this.diseaseName = diseaseName;
 	}
 
 	public String getKey() {

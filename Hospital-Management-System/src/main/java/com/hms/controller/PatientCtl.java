@@ -1,3 +1,4 @@
+
 package com.hms.controller;
 
 import java.io.IOException;
@@ -11,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 
 import com.hms.dto.BaseDTO;
-import com.hms.dto.DoctorDTO;
 import com.hms.dto.PatientDTO;
 import com.hms.exception.ApplicationException;
 import com.hms.exception.DuplicateRecordException;
@@ -19,7 +19,6 @@ import com.hms.model.DiseaseModelInt;
 import com.hms.model.DoctorModelInt;
 import com.hms.model.ModelFactory;
 import com.hms.model.PatientModelInt;
-import com.hms.model.SpecialistModelInt;
 import com.hms.model.WardModelInt;
 import com.hms.util.DataUtility;
 import com.hms.util.DataValidator;
@@ -54,13 +53,7 @@ public class PatientCtl extends BaseCtl {
 			request.setAttribute("phone", "Please Enter Valid Phone Number");
 			pass = false;
 		}
-		if (DataValidator.isNull(request.getParameter("email"))) {
-			request.setAttribute("email", PropertyReader.getValue("error.require", "Email Id"));
-			pass = false;
-		} else if (!DataValidator.isEmail(request.getParameter("email"))) {
-			request.setAttribute("email", PropertyReader.getValue("error.email", "Email Id"));
-			pass = false;
-		}
+
 		if (DataValidator.isNull(request.getParameter("address"))) {
 			request.setAttribute("address", PropertyReader.getValue("error.require", "Address"));
 			pass = false;
@@ -108,7 +101,7 @@ public class PatientCtl extends BaseCtl {
 		System.out.println("Patient =====>" + "populate dto method started");
 
 		PatientDTO dto = new PatientDTO();
-
+		dto.setId(DataUtility.getLong(request.getParameter("id")));
 		dto.setName(DataUtility.getString(request.getParameter("name")));
 		dto.setAge(DataUtility.getDate(request.getParameter("age")));
 		dto.setGender(DataUtility.getString(request.getParameter("gender")));
@@ -117,7 +110,7 @@ public class PatientCtl extends BaseCtl {
 		dto.setWardId(DataUtility.getLong(request.getParameter("wardId")));
 		dto.setDoctorId(DataUtility.getLong(request.getParameter("doctorId")));
 		dto.setDiseaseId(DataUtility.getLong(request.getParameter("diseaseId")));
-
+		System.out.println("syso===>" + request.getParameter("id"));
 		System.out.println("syso===>" + request.getParameter("name"));
 		System.out.println("syso===>" + request.getParameter("age"));
 		System.out.println("syso===>" + request.getParameter("gender"));
