@@ -129,9 +129,12 @@
 
 				<div class="col-sm-2"></div>
 
-				<div class="col-sm-3"><%=HTMLUtility.getList("wardlist", String.valueOf(dto.getWardId()), list1)%></div>
-				<div class="col-sm-3"><%=HTMLUtility.getList("doctorlist", String.valueOf(dto.getDoctorId()), list2)%></div>
-				<div class="col-sm-3"><%=HTMLUtility.getList("diseaselist", String.valueOf(dto.getDiseaseId()), list3)%></div>
+				<div class="col-sm-2"><%=HTMLUtility.getList("wardId", String.valueOf(dto.getWardId()),
+						(List) request.getAttribute("wardlist"))%></div>
+				<div class="col-sm-2"><%=HTMLUtility.getList("doctorId", String.valueOf(dto.getDoctorId()),
+						(List) request.getAttribute("doctorlist"))%></div>
+				<div class="col-sm-2"><%=HTMLUtility.getList("diseaseId", String.valueOf(dto.getDiseaseId()),
+						(List) request.getAttribute("diseaselist"))%></div>
 
 				<div class="col-sm-2">
 					<input type="submit" class="btn btn-primary btn-md"

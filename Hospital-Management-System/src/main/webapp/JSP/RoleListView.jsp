@@ -110,7 +110,7 @@
 			<div class="row">
 				<div class="col-sm-4"></div>
 
-				<div class="col-sm-3"><%=HTMLUtility.getList("roleId", String.valueOf(dto.getId()), list1)%></div>
+				<div class="col-sm-2"><%=HTMLUtility.getList("roleId", String.valueOf(dto.getId()), list1)%></div>
 				<div class="col-sm-2">
 					<input type="submit" class="btn btn-primary btn-md"
 						style="font-size: 17px" name="operation"

@@ -1,3 +1,4 @@
+<%@page import="java.util.HashMap"%>
 <%@page import="com.hms.dto.DoctorDTO"%>
 <%@page import="com.hms.controller.DoctorListCtl"%>
 <%@page import="com.hms.controller.DoctorCtl"%>
@@ -32,6 +33,7 @@
 
 	/* background-size: 100%; */
 }
+
 .table-hover tbody tr:hover td {
 	background-color: #0064ff36;
 }
@@ -109,6 +111,20 @@
 			<div class="row">
 
 				<div class="col-sm-2"></div>
+
+				<div class="col-sm-2">
+					<input type="text" name="name" placeholder="Enter Full Name"
+						class="form-control"
+						value="<%=ServletUtility.getParameter("name", request)%>">
+				</div>
+				&emsp;
+				<div class="col-sm-2">
+					<input type="text" name="email" placeholder="Enter Email Id"
+						class="form-control"
+						value="<%=ServletUtility.getParameter("email", request)%>">
+				</div>
+
+				&emsp;
 
 				<div class="col-sm-2">
 					<input type="submit" class="btn btn-primary btn-md"

@@ -117,7 +117,18 @@
 
 				<div class="col-sm-2"></div>
 
-				<div class="col-sm-3"><%=HTMLUtility.getList("specialist", String.valueOf(dto.getSpecialistId()), list1)%></div>
+			<div class="col-sm-2"><%=HTMLUtility.getList("specialistId", String.valueOf(dto.getSpecialistId()), list1)%></div>
+			
+			&emsp;
+				<div class="col-sm-2">
+					<input type="text" name="name" placeholder="Enter Disease Name"
+						class="form-control"
+						value="<%=ServletUtility.getParameter("name", request)%>">
+				</div>
+
+				&emsp;
+			
+			
 				<div class="col-sm-2">
 					<input type="submit" class="btn btn-primary btn-md"
 						style="font-size: 17px" name="operation"

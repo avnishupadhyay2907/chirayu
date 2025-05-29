@@ -107,7 +107,11 @@
 			<div class="row">
 
 				<div class="col-sm-2"></div>
-
+<div class="col-sm-2">
+					<input type="text" name="name" placeholder="Enter Full Name"
+						class="form-control"
+						value="<%=ServletUtility.getParameter("name", request)%>">
+				</div>
 				
 				<div class="col-sm-2">
 					<input type="submit" class="btn btn-primary btn-md"

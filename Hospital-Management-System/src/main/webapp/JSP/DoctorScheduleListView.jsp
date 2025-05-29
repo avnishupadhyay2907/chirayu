@@ -116,16 +116,7 @@
 			</div>
 			<div class="row">
 
-				<div class="col-sm-2"></div>
 
-				<div class="col-sm-3"><%=HTMLUtility.getList("doctorlist", String.valueOf(dto.getDoctorId()), list1)%></div>
-				<div class="col-sm-2">
-					<input type="submit" class="btn btn-primary btn-md"
-						style="font-size: 17px" name="operation"
-						value="<%=DoctorScheduleListCtl.OP_SEARCH%>">&emsp; <input
-						type="submit" class="btn btn-dark btn-md" style="font-size: 17px"
-						name="operation" value="<%=DoctorScheduleListCtl.OP_RESET%>">
-				</div>
 				<div class="col-sm-1"></div>
 			</div>
 

@@ -40,6 +40,7 @@
 .text {
 	text-align: center;
 }
+
 .table-hover tbody tr:hover td {
 	background-color: #0064ff36;
 }
@@ -112,23 +113,23 @@
 
 			<div class="row">
 
-
+				<div class="col-sm-2"></div>
 				<div class="col-sm-2">
-					<input type="text" name="firstName" placeholder="Enter FirstName"
+					<input type="text" name="name" placeholder="Enter Full Name"
 						class="form-control"
-						value="<%=ServletUtility.getParameter("firstName", request)%>">
+						value="<%=ServletUtility.getParameter("name", request)%>">
 				</div>
 
 				&emsp;
 				<div class="col-sm-2">
-					<input type="text" name="login" placeholder="Enter Login Id"
+					<input type="text" name="userName" placeholder="Enter Login Id"
 						class="form-control"
-						value="<%=ServletUtility.getParameter("login", request)%>">
+						value="<%=ServletUtility.getParameter("userName", request)%>">
 				</div>
 
 				&emsp;
 
-
+				<%-- 
 				<div class="col-sm-2">
 					<%
 						HashMap map = new HashMap();
@@ -153,7 +154,7 @@
 				</div>
 
 				&emsp;
-
+ --%>
 				<div class="col-sm-2">
 					<input type="submit" class="btn btn-primary btn-md"
 						style="font-size: 15px" name="operation"
@@ -175,8 +176,8 @@
 							<th width="10%"><input type="checkbox" id="select_all"
 								name="Select" class="text"> Select All</th>
 							<th width="5%" class="text">S.NO</th>
-							<th width="15%" class="text">FirstName</th>
-							<th width="20%" class="text">LoginId</th>
+							<th width="15%" class="text">Full Name</th>
+							<th width="20%" class="text">Login Id</th>
 							<th width="10%" class="text">Gender</th>
 							<th width="10%" class="text">Role</th>
 							<th width="10%" class="text">DOB</th>

@@ -40,9 +40,9 @@ public class DoctorScheduleListCtl extends BaseCtl {
 		System.out.println("Doctor Schedule List =====>" + "Populate Bean started");
 		log.debug("Disease list populate bean start");
 		DoctorScheduleDTO dto = new DoctorScheduleDTO();
-
-		dto.setDay(DataUtility.getString(request.getParameter("day")));
 		dto.setDoctorId(DataUtility.getLong(request.getParameter("doctorId")));
+		dto.setDay(DataUtility.getString(request.getParameter("day")));
+
 		dto.setStartTime(DataUtility.getString(request.getParameter("startTime")));
 		dto.setEndTime(DataUtility.getString(request.getParameter("endTime")));
 
